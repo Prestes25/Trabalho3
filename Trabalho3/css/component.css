@@ -32,7 +32,8 @@
     grid-template-columns: repeat(auto-fit, 200px); /* cria colunas de 200px cada */
     justify-content: center; /* centraliza tudo */
     gap: 10px; /* espaçamento entre os itens do forms */
-    padding:20px; /* espaçamento entre o forms e o site */
+    padding: 20px; /* espaçamento entre o forms e o site */
+	margin-right: 12.5vw; /* margin a direita */
 }
   
 .imgf{
