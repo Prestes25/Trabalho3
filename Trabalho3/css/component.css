@@ -1,0 +1,166 @@
+/*ids e classes*/
+
+/* imagens ficam responsivas */
+.img{
+    width: 60vw;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+#ref{
+    font-size: 12px; /* tamanho da letra */ 
+}
+
+/* galeria */
+#dois{
+    /* flexbox */
+     display: flex; /* itens flex */
+     flex-direction: row; /* direção do flex -- esquerda para a direita */
+     flex-wrap: wrap; /* em vez de cortar a imagem ela vai pra baixo e diminui junto  */
+            
+     align-items: center; /* centraliza os itens */
+     gap: 0.5vw; /* espaço entre a galeria o link*/
+     justify-content: space-evenly; /* os itens são destribuídos em espaços iguais */
+     align-content: flex-start; /* quando a tela fica menor eles se agrupam sem espaçamento */
+}
+
+/* formulário */
+.form{
+    display: grid; /* itens grid */
+    grid-template-columns: repeat(auto-fit, 200px); /* cria colunas de 200px cada */
+    justify-content: center; /* centraliza tudo */
+    gap: 10px; /* espaçamento entre os itens do forms */
+    padding:20px; /* espaçamento entre o forms e o site */
+}
+  
+.imgf{
+    margin-top: 20px; /* espaçamento em cima */
+    width: 100%; /* largura responsiva */
+    max-width: 500px; /* máxima altura que pode atingir */
+    height: auto; /* altura automática */
+}
+        
+/* em telas menores a imagem e o formulário ficam em uma única fileira*/
+@media (width < 500px) {
+    .form{
+        grid-template-columns: 1fr; 
+    }
+    .form figcaption{
+       display:none;
+    }
+}
+
+
+
+/* banner animado */
+.caixa{
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    width: 90vw;
+    height: 40vw;
+    border: 0.3vw var( --letter-border-color) solid;
+}
+.img1 { 
+  width:7vw;
+  height: 5vw;
+  background-image: url(../img/bandeira_EUA.png);
+  background-size: cover;
+  position:relative;
+  left:5vw;
+  top:15vw;
+
+  animation-name: desloca1;  
+  animation-duration: 5s;       
+  animation-iteration-count: infinite; 
+  animation-timing-function:linear;  
+}
+
+.img2{   
+  width:8vw;
+  height: 6vw;
+  background-image: url(../img/bandeira_URSS.png);
+  background-size: cover;
+  position:relative;
+  left: 75vw;
+  top:15vw;
+
+  animation-name: desloca2;  
+  animation-duration: 5s;       
+  animation-iteration-count: infinite;  
+  animation-timing-function:linear;   
+}
+
+
+@keyframes desloca1 {
+  0%   {transform: 
+                  translate(0vw)
+                  scale(1)
+      }  
+  50% {transform:
+                  translate(30vw)
+                  scale(2)            
+      }   
+  100% {transform:
+                  translate(0vw) 
+                  scale(1)           
+      }
+}
+
+
+@keyframes desloca2 {
+  0%   {transform: 
+                  translate(0vw)
+                  scale(1)
+      }  
+  50% {transform:
+                  translate(-30vw)
+                  scale(2)            
+      }   
+  100% {transform:
+                  translate(0vw) 
+                  scale(1)           
+      }
+}
+    
+
+/* mosaico */
+.mosaico{
+	display: grid; /* itens grid */
+	grid-template-columns: 1.2fr 1fr 1.2fr; /* colunas do grid */
+	grid-template-rows: auto auto auto; /* direções automáticas das colunas */
+	max-width: 70%; /* altura máxima == 70% */
+	margin: 0 auto; /* margin automática */
+    margin-bottom: 25px; /* margin embaixo */
+}
+
+.fotos img {
+  width: 100%; /* largura */
+  height: 100%; /* altura */
+  object-fit: cover; /* caso a imagem tenha tamanho diferente ela é cortada para se encaixar */
+  display: block; /* remove o espaço extra abaixo da imagem */
+}
+
+
+#foto1 {
+	grid-column: 1;
+	grid-row: 1 / span 2;
+}
+
+#foto2 {
+	grid-column: 2;
+	grid-row: 1;
+}
+#foto3 {
+	grid-column: 3;
+	grid-row: 1 / span 3;
+}
+#foto4 {
+	grid-column: 2;
+	grid-row: 2 / span 2;
+}
+#foto5 {
+	grid-column: 1;
+	grid-row: 3;
+}

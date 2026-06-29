@@ -1,0 +1,39 @@
+/*elementos base do html*/
+
+html {
+    scroll-behavior: smooth; /* rolagem suave ao clicar em âncoras */
+    text-size-adjust: 100%; /* melhora a renderização de texto no mobile */
+  }
+  
+    body { 
+    background-color: var(--bodybackground-color); /* cor de fundo do site */
+    font-family: var(--font-base);  /* fonte do google */
+    text-align: center; /* tudo centralizado */
+     }
+  
+
+  img, picture, video, canvas, svg {
+    max-width: 100%;  /* largura máxima q imagens e etc podem atingir */
+    display: block; /* remove espaços extras */
+  }
+  
+  input, button{
+    font: inherit;  /* inputs e buttons importam a fonte da página */
+  }
+
+   p, h1, h2, h3, h4, h5, h6, a {
+    overflow-wrap: break-word; /* não quebra as palavras quando a tela fica responsiva */
+
+ }
+
+  h2{
+      color: var(--letter-border-color); /* cor do subtítulo */
+  }
+
+  p{
+    padding-bottom: 15px; /* espaço entre os parágrafos */
+  }
+  
+
+
+  

@@ -1,0 +1,57 @@
+/*header, nav, main, footer...*/
+
+    header {
+      /* flexbox */
+      display: flex; /* itens flex */
+      flex-direction: row; /* direção do flex -- esquerda para a direita */
+      justify-content: center; /* centraliza na horizontal */
+      align-items: center; /* centraliza na vertical */
+
+      gap: 15px; /* espaço entre a logo e o título do site*/
+      padding: 20px; /* tamanho do header */
+      background-color: var(--background-color); /* cor do header */
+}
+
+    nav{
+      background-color: var(--background-color); /* cor de fundo do nav */
+    }
+
+    nav a {
+        color: var(--nav-a); /* cor das palavras */
+        text-decoration: none; /* tira o underline */
+        margin: 10px; /* espaço entre um link e outro */
+    }
+
+    nav a:hover{
+      color: var(--nav-main-a-hover); /* cor de quando se passa o cursor em cima dos links */
+    }
+
+    main a{ 
+      color: var(--main-a); /* cor das palavras */
+    }
+
+    main a:hover{ 
+      color: var(--nav-main-a-hover); /* cor de quando se passa o cursor em cima dos links */
+    }
+
+
+    header h1{
+      color: var(--letter-border-color);  /* cor do título */
+    }
+
+    button{
+      margin-top: 5px; /* espaço de cima */
+      margin-left: 250px; /* espaço da esquerda */
+      background-color: var(--background-button); /* cor de fundo do botão */
+      border: 2px solid var(--letter-border-color); /* cor e tamanho da borda */
+  }
+
+
+    section{ 
+        padding: 15px; /* espaço entre uma sessão e outra */
+    }
+
+    footer{
+        font-size: 12px; /* tamanho da letra */ 
+    }
+
