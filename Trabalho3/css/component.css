@@ -29,7 +29,7 @@
 /* formulário */
 .form{
     display: grid; /* itens grid */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr); /* cria colunas de 200px cada */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* cria colunas de 200px cada */
 	justify-content: center; /* centraliza tudo */
     gap: 10px; /* espaçamento entre os itens do forms */
     padding: 20px; /* espaçamento entre o forms e o site */
