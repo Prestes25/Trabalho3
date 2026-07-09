@@ -56,40 +56,40 @@
 
 /* banner animado */
 .caixa{
-    margin-left: 4vw;
-    margin-bottom: 2vw;
-    width: 90vw;
-    height: 40vw;
-    border: 0.3vw var( --letter-border-color) solid;
+    margin-left: 4vw; /* margem da esquerda */
+    margin-bottom: 2vw; /* margem de baixo */
+    width: 90vw; /* largura */
+    height: 40vw; /* altura */
+    border: 0.3vw var( --letter-border-color) solid; /* tamanho, cor e estilo da borda */
 }
 .img1 { 
-  width:7vw;
-  height: 5vw;
-  background-image: url(../img/bandeira_EUA.png);
-  background-size: cover;
-  position:relative;
-  left:5vw;
-  top:15vw;
+  width:7vw; /* largura */
+  height: 5vw; /* altura */
+  background-image: url(../img/bandeira_EUA.png); /* imagem */
+  background-size: cover; /* imagem não é distorcida */
+  position: relative; /* posição */
+  left: 5vw; /* se posiciona a esquerda */
+  top: 15vw; /* se posiciona para cima */
 
-  animation-name: desloca1;  
-  animation-duration: 5s;       
-  animation-iteration-count: infinite; 
-  animation-timing-function:linear;  
+  animation-name: desloca1;  /* animação da imagem1 */
+  animation-duration: 5s; /* duração da animação */  
+  animation-iteration-count: infinite; /* interação infinita da animação */
+  animation-timing-function: linear;  /* ritmo da animação */
 }
 
 .img2{   
-  width:8vw;
-  height: 6vw;
-  background-image: url(../img/bandeira_URSS.png);
-  background-size: cover;
-  position:relative;
-  left: 75vw;
-  top:15vw;
+  width:8vw; /* largura */
+  height: 6vw; /* altura */
+  background-image: url(../img/bandeira_URSS.png); /* imagem */
+  background-size: cover; /* imagem não é distorcida */
+  position: relative; /* posição */
+  left: 75vw; /* se posiciona a esquerda */
+  top: 15vw; /* se posiciona para cima */
 
-  animation-name: desloca2;  
-  animation-duration: 5s;       
-  animation-iteration-count: infinite;  
-  animation-timing-function:linear;   
+  animation-name: desloca2;  /* animação da imagem2 */
+  animation-duration: 5s; /* duração da animação */       
+  animation-iteration-count: infinite; /* interação infinita da animação */
+  animation-timing-function:linear;  /* ritmo da animação */
 }
 
 
@@ -144,23 +144,23 @@
 
 
 #foto1 {
-	grid-column: 1;
-	grid-row: 1 / span 2;
+	grid-column: 1; /* coluna que a imagem começa */
+	grid-row: 1 / span 2; /* linha que começa, e quanto ocupa dela */
 }
 
 #foto2 {
-	grid-column: 2;
-	grid-row: 1;
+	grid-column: 2; /* coluna que a imagem começa */
+	grid-row: 1; /* linha que começa, e quanto ocupa dela */
 }
 #foto3 {
-	grid-column: 3;
-	grid-row: 1 / span 3;
+	grid-column: 3; /* coluna que a imagem começa */
+	grid-row: 1 / span 3; /* linha que começa, e quanto ocupa dela */
 }
 #foto4 {
-	grid-column: 2;
-	grid-row: 2 / span 2;
+	grid-column: 2; /* coluna que a imagem começa */
+	grid-row: 2 / span 2; /* linha que começa, e quanto ocupa dela */
 }
 #foto5 {
-	grid-column: 1;
-	grid-row: 3;
+	grid-column: 1; /* coluna que a imagem começa */
+	grid-row: 3; /* linha que começa, e quanto ocupa dela */
 }
