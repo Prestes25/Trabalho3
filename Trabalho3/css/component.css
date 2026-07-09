@@ -35,7 +35,7 @@
     padding:20px; /* espaçamento entre o forms e o site */
 }
   
-.imgf{
+.imgf img{
     margin-top: 20px; /* espaçamento em cima */
     width: 100%; /* largura responsiva */
     max-width: 500px; /* máxima altura que pode atingir */
